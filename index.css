@@ -1,0 +1,239 @@
+
+body{
+
+	color: white;
+	background-image: linear-gradient(to top, red, black);
+	font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+	
+
+}
+
+ul{
+
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	align-items: center;
+	padding: 16px;
+}
+
+
+
+a{
+
+	color: white;
+	text-decoration: none;
+
+}
+
+ img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2.50px solid red;
+	background: url(dog.jpg);
+
+
+}
+
+.foto1{
+
+	text-align: center;
+	justify-content: space-around;
+
+	
+
+	
+
+
+}
+
+.center{
+
+	text-align: center;
+
+
+}
+
+h3 {
+	color: red;
+	text-decoration: none;
+	text-align: center;
+	text-decoration: underline 5%;
+}
+
+img{
+
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2.50px solid black;
+	align-content: center;
+    
+
+}
+
+nav a:hover{
+
+	color:red;
+}
+
+footer{
+	width: 100%;
+	min-height: 250px;
+	background: #444;
+	display: flex;
+	
+}
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: #f12020;
+    top: -10px;
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+    top: -10px;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #f12020;
+}
+.left .content p{
+    text-align: justify;
+}
+.center .content .fas{
+    font-size: 23px;
+    background: #1a1a1a;
+    width: 45px;
+    height: 45px ;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+    background: #f12020;
+}
+.center .content .text{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.center .content .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 17px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input{
+    height: 35px;
+}
+.right form input:
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form .text{
+    font-size: 17px;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    background: #f12020;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: #000;
+}
+.bottom .center{
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+    text-align: center;
+}
+.bottom .center span{
+    color: #656565;
+}
+.bottom .center a{
+    color: #f12020;
+    text-decoration: none;
+}
+.bottom .center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: fixed;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
+
+
